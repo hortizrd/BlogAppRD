@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginActivity"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/login_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/userphoto" />
+
+    <EditText
+        android:id="@+id/login_mail"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/reg_editext_style"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_photo"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/reg_editext_style"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_mail"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/login_Btn"
+        android:layout_width="219dp"
+
+        android:layout_height="39dp"
+        android:background="@drawable/reg_btn_style"
+        android:hint="ACCEDER"
+        android:textColorHint="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_password"
+        app:layout_constraintVertical_bias="0.435" />
+
+    <ProgressBar
+        android:id="@+id/login_progres"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="39dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toBottomOf="@+id/login_Btn"
+        app:layout_constraintEnd_toEndOf="@+id/login_Btn"
+        app:layout_constraintStart_toStartOf="@+id/login_Btn"
+        app:layout_constraintTop_toTopOf="@+id/login_Btn"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

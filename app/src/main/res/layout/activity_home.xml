@@ -6,4 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".Activities.HomeActivity">
 
+    <Button
+        android:id="@+id/home_btnsalir"
+        android:layout_width="193dp"
+        android:layout_height="57dp"
+        android:background="@drawable/reg_btn_style"
+        android:text="Salir"
+        android:textColor="#fff"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="155dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
